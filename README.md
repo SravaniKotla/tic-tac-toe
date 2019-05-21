@@ -1,3 +1,17 @@
+## Project
+This is a basic tic-tac-toe with 4 components, namely Square.js, Board.js and Game.js and App component. App component renders the Game component.
+ 
+Board component renders the basic template for tic-tac-toe game and also renders Square as its child component. Each Square component has Button inside which display either 'X' or 'O' based on the player.
+
+The Game component has all the logic, it renders the Board component, shows Game status, New Game Button, Number of Moves. It passes down props to the Board component, Board component passes the props down to the Square Component.
+
+Game Status - Displays which player should go next. Eg: Player: X or Player: O . It also displays if there is a winner or if the game is draw.
+
+## Testing using Jest and Enzyme
+
+I have used Jest and Enzyme to test if each component renders correctly and also the button functionality. 
+NOTE: 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
