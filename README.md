@@ -10,7 +10,8 @@ Game Status - Displays which player should go next. Eg: Player: X or Player: O .
 ## Testing using Jest and Enzyme
 
 I have used Jest and Enzyme to test if each component renders correctly and also the button functionality. 
-NOTE: 
+
+NOTE: There is a setUpTests.js under src folder which is necessary for the tests to pass. This is a setup file for the test cases.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
