@@ -1,57 +1,87 @@
-body {
-  font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
+@media only screen and (min-width: 600px) {
+  .game{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  }
+  .game-board{
+    display:flex;
+    flex-direction:column;
+    height: 100vh!important;
+    width: 50%;
+  }
+  .game-info{
+    display:flex;
+    flex-direction:column;
+    height: 100vh!important;
+    width: 50%;
+  }
 }
+
+.board-row{
+  display:flex;
+  flex-direction:inline;
+}
+
+.square{
+  border: 1px outset black;
+  background-color: lightBlue;
+  height:60px;
+  width:60px;
+  cursor:pointer;
+  font-size: 3em;
+   
+}
+
+.square:focus{
+  outline: 0;
+}
+
 ul{
   list-style: none;
+  margin: 0px!important;
+  padding: 0px!important;
 }
 
-.board-row:after {
-  clear: both;
-  content: "";
-  display: table;
+.status{
+  font-size: 2em;
+  background-color: black;
+  padding: 10px 15px;
+  color: white;
 }
-
-.status {
-  margin-bottom: 10px;
-  background-color: aquamarine;
-  font-size: 30px;
-}
-
-.square {
-  background: #fff;
-  border: 1px solid #999;
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 20vh;
-  height: 20vh;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
-  width: 20vh;
-}
-
-.square:focus {
-  outline: none;
-}
-
-.kbd-navigation .square:focus {
-  background: #ddd;
-}
-
-.game {
-  display: flex;
-  flex-direction: row;
-}
-
 .game-board{
-  margin: auto;
-  padding: 10px;
+  height: 50vh;
+  background-color:black!important; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, rgb(46, 46, 46), rgb(158, 158, 158)); /* Standard syntax (must be last) */
+}
+.game-info{
+  position: relative;
+  height: 50vh;
+  text-align: center;
+}
+.moves-button{
+  width: 80%;
+  padding: 0px!important;
+  margin: 0px!important;
+
+}
+.winner{
+  background-color: rgb(18, 175, 84);
+  color: white;
+}
+.tie{
+  color: rgb(252, 248, 27);
+  font: bold;
 }
 
-.game-info {
-  margin-left: 20px;
+.newGame{
+  background-color: rgb(19, 108, 190);
+  color: white;
+  font-size: 1.5em;
+  margin: 0px!important;
 }
-
+.board{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
