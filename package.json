@@ -7,7 +7,7 @@
     "enzyme-adapter-react-16": "^1.13.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "^3.0.1",
+    "react-scripts": "^5.0.1",
     "react-test-renderer": "^16.8.6"
   },
   "scripts": {
@@ -45,7 +45,7 @@
     "babel-loader": "^8.0.0-beta.0",
     "babel-preset-env": "^1.7.0",
     "copy-webpack-plugin": "^4.5.1",
-    "eslint": "^5.16.0",
+    "eslint": "^9.32.0",
     "eslint-plugin-react": "^7.13.0"
   }
 }
